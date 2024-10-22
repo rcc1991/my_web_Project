@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+   
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+   
+    
+}
+
+header {
+     background: #5e8eee;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+.logo img{
+    
+    height: 60px;
+    width: 190px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    float: right;
+
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+    position: sticky;
+}
+
+nav a {
+    color: hsl(0, 10%, 92%);
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    background-color:  #134bbb; 
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    mask-image: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.terminal-list {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.terminal-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.terminal-item img {
+    width: 450px;
+    height: 400px;
+}
+
+.facilities-img, .tips-img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terminal-list {
+        flex-direction: column;
+    }
+
+    .terminal-item {
+        flex: 1 1 100%;
+    }
+
+    .gallery-images img {
+        width:fit-content;
+    }
+}
